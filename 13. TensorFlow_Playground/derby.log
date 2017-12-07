@@ -1,5 +1,5 @@
-Thu Nov 30 09:23:57 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Wed Dec 06 10:50:40 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -111,11 +111,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 111 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -164,7 +164,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
 	... 108 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -275,7 +275,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -325,7 +325,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	... 108 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -482,8 +482,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /Use
 	at java.lang.Thread.run(Thread.java:745)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Thu Nov 30 09:23:57 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Wed Dec 06 10:50:40 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -595,11 +595,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 111 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -648,7 +648,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
 	... 108 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -759,7 +759,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -809,7 +809,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	... 108 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -966,8 +966,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /Use
 	at java.lang.Thread.run(Thread.java:745)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Thu Nov 30 09:23:58 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Wed Dec 06 10:50:40 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -1079,11 +1079,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 111 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1132,7 +1132,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
 	... 108 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -1243,7 +1243,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1293,7 +1293,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	... 108 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1450,8 +1450,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /Use
 	at java.lang.Thread.run(Thread.java:745)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Thu Nov 30 09:23:58 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Wed Dec 06 10:50:40 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -1563,11 +1563,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 111 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1616,7 +1616,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
 	... 108 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -1727,7 +1727,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1777,7 +1777,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	... 108 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -1934,8 +1934,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /Use
 	at java.lang.Thread.run(Thread.java:745)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Thu Nov 30 09:23:58 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Wed Dec 06 10:50:40 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -2044,11 +2044,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 108 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2097,7 +2097,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
 	... 105 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -2205,7 +2205,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2255,7 +2255,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	... 105 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2409,8 +2409,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /Use
 	at java.lang.Thread.run(Thread.java:745)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Thu Nov 30 09:23:58 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Wed Dec 06 10:50:40 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -2519,11 +2519,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 108 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2572,7 +2572,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
 	... 105 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -2680,7 +2680,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2730,7 +2730,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	... 105 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -2884,8 +2884,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /Use
 	at java.lang.Thread.run(Thread.java:745)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Thu Nov 30 09:23:59 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Wed Dec 06 10:50:40 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -2994,11 +2994,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 108 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3047,7 +3047,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
 	... 105 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -3155,7 +3155,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3205,7 +3205,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	... 105 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3359,8 +3359,8 @@ ERROR XSDB6: Another instance of Derby may have already booted the database /Use
 	at java.lang.Thread.run(Thread.java:745)
 ============= end nested exception, level (2) ===========
 Cleanup action completed
-Thu Nov 30 09:23:59 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
-java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Wed Dec 06 10:50:40 MYT 2017 Thread[Thread-2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -3469,11 +3469,11 @@ java.sql.SQLException: Failed to start database 'metastore_db' with class loader
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@78f125d3, see the next exception for details.
+Caused by: ERROR XJ040: Failed to start database 'metastore_db' with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@26949f2a, see the next exception for details.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 108 more
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3522,7 +3522,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	at org.apache.derby.impl.jdbc.EmbedConnection.startPersistentService(Unknown Source)
 	... 105 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+java.sql.SQLException: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -3630,7 +3630,7 @@ java.sql.SQLException: Another instance of Derby may have already booted the dat
 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
 	at py4j.GatewayConnection.run(GatewayConnection.java:214)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+Caused by: ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
@@ -3680,7 +3680,7 @@ Caused by: ERROR XSDB6: Another instance of Derby may have already booted the da
 	... 105 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/Experiments/metastore_db.
+ERROR XSDB6: Another instance of Derby may have already booted the database /Users/user/Desktop/Work (AirAsia)/superdatascience/13. TensorFlow_Playground/metastore_db.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.store.raw.data.BaseDataFileFactory.privGetJBMSLockOnDB(Unknown Source)
